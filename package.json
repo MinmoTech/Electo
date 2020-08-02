@@ -1,14 +1,57 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "name": "electo",
+  "author": {
+    "name": "Julius Dehner",
+    "email": "julius.dehner@gmail.com"
+  },
+  "version": "0.0.1",
+  "build": {
+    "extraMetadata": {
+      "main": "main.js"
+    },
+    "files": [
+      {
+        "from": "dist/main/",
+        "to": "./",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "dist/renderer",
+        "to": "./",
+        "filter": [
+          "**/*"
+        ]
+      },
+      "package.json",
+      "**/node_modules/**/*"
+    ],
+    "appId": "de.electo",
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    },
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "electron-start": "yarn expo-electron start",
+    "electron-test-build": "yarn electron-webpack && yarn electron-builder -mwl -c.compression=store -c.mac.identity=null",
+    "electron-prod-build": "yarn electron-webpack && yarn electron-builder -mwl -c.mac.identity=null"
   },
   "dependencies": {
-    "electron": "^6.0.12",
+    "babel-loader": "^8.1.0",
     "expo": "~38.0.8",
     "expo-status-bar": "^1.0.2",
     "react": "~16.11.0",
@@ -20,7 +63,9 @@
     "@babel/core": "^7.8.6",
     "@expo/electron-adapter": "^0.0.8",
     "@expo/webpack-config": "^0.12.21",
-    "babel-preset-expo": "~8.1.0"
+    "babel-preset-expo": "~8.1.0",
+    "electron": ">=7.2.4",
+    "electron-builder": "^22.8.0"
   },
   "private": true
 }
