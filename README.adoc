@@ -1,0 +1,45 @@
+= Electo music player
+
+[NOTE]
+====
+This is a very ambitious project. It is currently just a draft of ideas which will hopefully incrementally come to reality. Some of these ideas might not be possible.
+====
+
+== Goals
+* Target multiple streaming platforms as music sources
+* Cross platform: target Android, iOS, Linux, Windows and Mac (priority targets are Android and Linux)
+* This should probably be doable with React Native - see Plexamp
+* Multi-streaming-platform playlists (name suggestion: aggregations)
+* Music video finding - via search or community databases (e.g. https://vocadb.net/)
+* Download aggregations by default to prevent missing songs on video deletion
+* Service migration - in case a song gets deleted on one service, you can migrate it
+* Database of aggregations can be exported as a text file to sync between devices, additionally a paid backend service using cloud object storage?
+* Song discovery is a low priority, maybe only within each individual service initially
+
+
+== Music platforms in order of priority
+* Youtube (see https://github.com/natumbri/mopidy-youtube)
+* Nico Nico Douga (see https://github.com/yurafuca/nicotap or https://github.com/uetchy/niconico maybe?)
+* Jellyfin (see https://github.com/jellyfin/mopidy-jellyfin)
+* Plex (see https://github.com/croneter/PlexKodiConnect maybe?)
+* Soundcloud (see https://github.com/mopidy/mopidy-soundcloud)
+* Spotify (see https://developer.spotify.com/documentation/web-playback-sdk/quick-start/)
+* Bandcamp
+* Subsonic
+* Deezer
+* Emby
+* Youtube music (haven't seen another implementation yet)
+* Vimeo
+* Beets (see https://github.com/mopidy/mopidy-beets)
+* MixCloud (?)
+* Jamendo (?)
+* Qobuz (?)
+* Local files (maybe?)
+
+== Similar projects:
+* https://github.com/mps-youtube/mps-youtube
+* https://github.com/nukeop/nuclear
+* https://github.com/EragonJ/Kaku
+* https://github.com/tomahawk-player/tomahawk
+* https://www.clementine-player.org/
+* https://mopidy.com/
