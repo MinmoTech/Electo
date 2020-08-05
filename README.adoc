@@ -8,7 +8,7 @@ This is a very ambitious project. It is currently just a draft of ideas which wi
 Electo is a (soon to be) music player, that aggragates multiple music services. +
 This means you can use one app to listen to all the different music services you want. +
 An example would be an artist posts an exclusive song to youtube and it is not available on spotify. +
-Using Electo you can put the spotify songs and the exclusive song in one collected playlist.
+Using Electo you can put the spotify songs and the exclusive youtube song in one collected playlist and listen to it.
 
 == Goals
 * Target multiple streaming platforms as music sources
