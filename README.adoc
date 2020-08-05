@@ -5,6 +5,11 @@
 This is a very ambitious project. It is currently just a draft of ideas which will hopefully incrementally come to reality. Some of these ideas might not be possible.
 ====
 
+Electo is a (soon to be) music player, that aggragates multiple music services. +
+This means you can use one app to listen to all the different music services you want. +
+An example would be an artist posts an exclusive song to youtube and it is not available on spotify. +
+Using Electo you can put the spotify songs and the exclusive song in one collected playlist.
+
 == Goals
 * Target multiple streaming platforms as music sources
 * Cross platform: target Android, iOS, Linux, Windows and Mac (priority targets are Android and Linux)
@@ -24,11 +29,11 @@ This is a very ambitious project. It is currently just a draft of ideas which wi
 * Plex (see https://github.com/croneter/PlexKodiConnect maybe?)
 * Soundcloud (see https://github.com/mopidy/mopidy-soundcloud)
 * Spotify (see https://developer.spotify.com/documentation/web-playback-sdk/quick-start/)
-* Bandcamp
+* Bandcamp (https://github.com/tomahawk-player/tomahawk-resolvers/blob/master/bandcamp/content/contents/code/bandcamp.js maybe?)
 * Subsonic
 * Deezer
 * Emby
-* Youtube music (haven't seen another implementation yet)
+* Youtube music (https://github.com/sigma67/ytmusicapi maybe in the future?)
 * Vimeo
 * Beets (see https://github.com/mopidy/mopidy-beets)
 * MixCloud (?)
@@ -43,3 +48,5 @@ This is a very ambitious project. It is currently just a draft of ideas which wi
 * https://github.com/tomahawk-player/tomahawk
 * https://www.clementine-player.org/
 * https://mopidy.com/
+* https://github.com/mjibson/moggio
+* https://github.com/Cloud-Player/web
